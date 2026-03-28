@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Student Desk</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Campus Student Desk</h1>
+    <p class="intro">Simple interface for mini-project viva (Add + Search flow).</p>
+
+    <section class="card">
+      <h2>Add New Student</h2>
+      <form>
+        <label for="sid">Student ID</label>
+        <input id="sid" type="number" placeholder="Example: 301" required />
+
+        <label for="sname">Student Name</label>
+        <input id="sname" type="text" placeholder="Enter full name" required />
+
+        <label for="sage">Age</label>
+        <input id="sage" type="number" min="1" placeholder="Must be > 0" required />
+
+        <label for="scourse">Course</label>
+        <input id="scourse" type="text" placeholder="Example: Information Systems" required />
+
+        <label for="ssection">Section</label>
+        <input id="ssection" type="text" placeholder="A / B / C" maxlength="2" />
+
+        <button type="submit">Save Student</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Search by ID</h2>
+      <form>
+        <label for="search-id">Student ID</label>
+        <input id="search-id" type="number" placeholder="Enter ID to search" required />
+
+        <button type="submit">Find Student</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
